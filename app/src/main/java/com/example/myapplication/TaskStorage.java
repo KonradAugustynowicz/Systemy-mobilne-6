@@ -30,6 +30,11 @@ public class TaskStorage {
         for (Task task:tasks){
             if(task.getId().equals(id)) return task;
         }
+
         return null;
+    }
+
+    public void addTask(Task task){
+        tasks.add(task);
     }
 }
